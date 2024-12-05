@@ -1,0 +1,88 @@
+/* Style général */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-image: linear-gradient(to left bottom, #00c6ff, #00aeff, #5b8fff, #9e65ed, #cd11ba);  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+button {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+  background-color:#f6f2dd;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0px 0px 58px 19px rgba(0,0,0,0.55);
+}
+
+.menu-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #f6f2dd;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  padding: 10px 0px 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #f6f2dd;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+/* Effet Responsive */
+@media (max-width: 500px) {
+  .menu-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .menu-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .menu-container button {
+    font-size: 1rem;
+    padding: 8px 12px;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px; /* Distance depuis le bas */
+  left: 10px;  /* Distance depuis la gauche */
+  font-size: 14px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent pour lisibilité */
+  padding: 5px 10px;
+  border-radius: 5px; /* Coins arrondis */
+  z-index: 1000; /* S'assure que le texte est au-dessus des autres éléments */
+}

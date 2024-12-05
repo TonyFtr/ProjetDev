@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini-Jeux</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="footer">
+    Developped by Anthony Futre
+  </div>
+  <div id="menu">
+    <h1>Mini - Jeux</h1>
+    <p>Choisissez un jeu :</p>
+    <ul>
+      <li><a href="morpion.html" ><button class="menu-button" data-game="tic-tac-toe">Morpion</button></a></li>
+      
+      <li><a href= "snake.html" ><button class="menu-button" data-game="snake">Snake</button></a></li>
+
+      <li><a href="chaud-ou-froid.html" ><button class="menu-button" data-game="chaud-ou-froid">Chaud ou Froid</button></a></li>
+    </ul>
+  </div>
+  <div id="game-container" style="display: none;">
+    <!-- Les jeux seront injectés ici dynamiquement -->
+  </div>
+</body>
+</html>

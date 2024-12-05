@@ -1,0 +1,122 @@
+/* Style général */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Dégradé élégant */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .game-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  #tic-tac-toe {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 0 auto;
+  }
+  
+  
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  .cell:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05); /* Zoom au survol */
+  }
+  
+  .cell.x {
+    color: #2196F3; /* Bleu pour les X */
+    text-shadow: 1px 1px 4px rgba(33, 150, 243, 0.5);
+  }
+  
+  .cell.o {
+    color: #FF5722; /* Orange pour les O */
+    text-shadow: 1px 1px 4px rgba(255, 87, 34, 0.5);
+  }
+  
+  /* Bouton de redémarrage */
+  .recommencer {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+  }
+  
+  .back-menu {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: fixed;
+    top: 10px; /* Distance depuis le bas */
+    left: 10px;  /* Distance depuis la gauche */
+    box-shadow: 0px 0px 58px 19px rgba(0,0,0,0.4);
+  }
+
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Zoom léger au survol */
+  }
+  
+  #message {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 500px) {
+    #tic-tac-toe {
+      grid-template-columns: repeat(3, 70px);
+      grid-template-rows: repeat(3, 70px);
+    }
+  
+    .cell {
+      width: 70px;
+      height: 70px;
+      font-size: 30px;
+    }
+  }

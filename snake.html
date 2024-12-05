@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <link rel="stylesheet" href="snake.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu Snake</title>
+</head>
+<body>
+  <a href="index.html"><button class="back-menu">Retour au menu</button></a>
+  <div class="game-container">
+    <h1>Snake</h1>
+    <p>Score : <span id="scoreCounter">0</span></p>
+    <div class="canvas-container">
+      <canvas id="gameCanvas"></canvas>
+    </div>
+    <div class="controls">
+      <div class="grid-container"></div>
+    </div>
+    <button class="startButton" id="startButton">Démarrer le jeu</button>
+  </div>
+  <script src="https://cdn.jsdelivr.net/gh/noumanqamar450/alertbox@main/version/1.0.2/alertbox.min.js"></script>
+  <script src="jeux/snake.js"></script>
+</body>
+</html>
