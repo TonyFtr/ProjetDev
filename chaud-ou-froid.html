@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeu du Chaud ou Froid</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Chaud-Froid.css">
 </head>
-<body>
+<body class="gradient">
     <a href="index.html"><button id="retour-menu">Retour au menu</button></a>
     <a href="" style="text-decoration: none;color:#fff;" ><button id="choix-difficulté">Choix difficulté</button></a>
     <h1>Jeu du Chaud ou Froid</h1>
@@ -22,7 +22,10 @@
   <div id="game">
     <h2>Devinez le nombre !</h2>
     <p>Entrez un nombre entre 1 et <span id="max-number"></span> :</p>
-    <input type="number" id="user-input" min="1" />
+      <label>
+        Entrez un nombre :
+        <input type="number" id="user-input" min="1" />
+        </label>
     <button onclick="verifierReponse()">Vérifier</button>
     
     <div id="message"></div>

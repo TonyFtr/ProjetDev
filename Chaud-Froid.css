@@ -1,0 +1,227 @@
+/* Style global */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background: linear-gradient(135deg, #ff7e5f, #feb47b); Dégradé chaud */
+  /* background-image: linear-gradient(to right top , #06285b, #f31111); */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Bouton de retour au menu */
+#retour-menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#retour-menu:hover {
+  background-color: #e53935;
+}
+
+/* Bouton de choix de difficulté */
+#choix-difficulté {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#choix-difficulté:hover {
+  background-color: #45a049;
+}
+
+/* Titre principal */
+h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+/* Texte descriptif */
+p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Conteneur des boutons de difficulté */
+#difficulte {
+  margin-bottom: 20px;
+}
+
+#difficulte h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#difficulte button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#difficulte button:hover {
+  background-color: #45a049;
+}
+
+/* Section du jeu */
+#game {
+  display: none; /* Caché par défaut jusqu'à ce que la difficulté soit choisie */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 10px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+}
+
+#game h2 {
+  font-size: 1.5rem;
+  color: #ff6f61;
+}
+
+#game p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Input utilisateur */
+#user-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ff6f61;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+#user-input:focus {
+  border-color: #ff4c3b;
+}
+
+/* Bouton de vérification */
+#game button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#game button:hover {
+  background-color: #ff4c3b;
+}
+
+#game button:active {
+  transform: scale(0.95);
+}
+
+/* Message de feedback */
+#message {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+#message.cold {
+  color: #00aaff; /* Couleur froide */
+}
+
+#message.warm {
+  color: #ffcc00; /* Couleur chaude */
+}
+
+#message.hot {
+  color: #ff4c3b; /* Couleur très chaude */
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #game {
+    width: 100%;
+  }
+
+  #difficulte button {
+    font-size: 0.9rem;
+  }
+
+  #user-input {
+    font-size: 0.9rem;
+  }
+
+  #game button {
+    font-size: 0.9rem;
+  }
+
+  #message {
+    font-size: 1rem;
+  }
+}
+
+
+
+.gradient {
+  background-image: linear-gradient(
+    115deg,
+    hsl(240deg 100% 23%) 0%,
+    hsl(259deg 100% 23%) 13%,
+    hsl(270deg 100% 23%) 22%,
+    hsl(278deg 100% 22%) 28%,
+    hsl(286deg 100% 22%) 34%,
+    hsl(293deg 100% 22%) 38%,
+    hsl(301deg 100% 22%) 42%,
+    hsl(308deg 100% 24%) 46%,
+    hsl(313deg 100% 26%) 49%,
+    hsl(318deg 100% 27%) 52%,
+    hsl(322deg 100% 29%) 55%,
+    hsl(326deg 100% 31%) 57%,
+    hsl(329deg 100% 32%) 60%,
+    hsl(332deg 100% 34%) 62%,
+    hsl(335deg 100% 35%) 64%,
+    hsl(338deg 100% 36%) 66%,
+    hsl(340deg 100% 37%) 69%,
+    hsl(342deg 100% 38%) 71%,
+    hsl(344deg 100% 39%) 73%,
+    hsl(347deg 100% 40%) 75%,
+    hsl(349deg 100% 41%) 78%,
+    hsl(351deg 100% 41%) 80%,
+    hsl(353deg 100% 42%) 84%,
+    hsl(356deg 100% 42%) 88%,
+    hsl(0deg 100% 42%) 100%
+  );
+}
