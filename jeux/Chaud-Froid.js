@@ -1,4 +1,4 @@
-    let nombreADeviner;
+let nombreADeviner;
     let essais = 0;
     let numMax;
     let button_difficulty = document.getElementById('choix-difficulté');
@@ -46,13 +46,8 @@
       }
 
       // Limite d'essais
-      if ((numMax === 50 && essais >= 10) || (numMax === 100 && essais >= 15) || (numMax === 200 && essais >= 200)) {
+      if ((numMax === 50 && essais >= 10) || (numMax === 100 && essais >= 15) || (numMax === 200 && essais >= 20)) {
         messageElement.textContent = `Vous avez atteint le nombre maximum d'essais. Le nombre à deviner était ${nombreADeviner}.`;
         messageElement.style.color = 'red';
       }
     }
-    document.addEventListener("keydown", (e) => {
-     if (e.key==="Enter") {
-       verifierReponse();
-     }
-    });
